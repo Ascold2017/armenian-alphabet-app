@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AM APP</string>
+    <string name="title_activity_main">AM APP</string>
+    <string name="package_name">com.capacitorjs.amapp</string>
+    <string name="custom_url_scheme">com.capacitorjs.amapp</string>
+</resources>

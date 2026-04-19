@@ -1,0 +1,275 @@
+[
+    {
+        "id": 1,
+        "letterU": "Ա",
+        "letterL": "ա",
+        "transcription": "[a]",
+        "frequency": 16.6615
+    },
+    {
+        "id": 2,
+        "letterU": "Բ",
+        "letterL": "բ",
+        "transcription": "[b]",
+        "frequency": 1.292
+    },
+    {
+        "id": 3,
+        "letterU": "Գ",
+        "letterL": "գ",
+        "transcription": "[g]",
+        "frequency": 1.7845
+    },
+    {
+        "id": 4,
+        "letterU": "Դ",
+        "letterL": "դ",
+        "transcription": "[d]",
+        "frequency": 1.4776
+    },
+    {
+        "id": 5,
+        "letterU": "Ե",
+        "letterL": "ե",
+        "transcription": "[e/ye]",
+        "frequency": 5.8874
+    },
+    {
+        "id": 6,
+        "letterU": "Զ",
+        "letterL": "զ",
+        "transcription": "[z]",
+        "frequency": 0.7917
+    },
+    {
+        "id": 7,
+        "letterU": "Է",
+        "letterL": "է",
+        "transcription": "[ē] (э)",
+        "frequency": 1.194
+    },
+    {
+        "id": 8,
+        "letterU": "Ը",
+        "letterL": "ը",
+        "transcription": "[ə] (ё)",
+        "frequency": 1.3461
+    },
+    {
+        "id": 9,
+        "letterU": "Թ",
+        "letterL": "թ",
+        "transcription": "[tʰ]",
+        "frequency": 1.9625
+    },
+    {
+        "id": 10,
+        "letterU": "Ժ",
+        "letterL": "ժ",
+        "transcription": "[ʒ] (ж)",
+        "frequency": 0.2553
+    },
+    {
+        "id": 11,
+        "letterU": "Ի",
+        "letterL": "ի",
+        "transcription": "[i]",
+        "frequency": 6.5424
+    },
+    {
+        "id": 12,
+        "letterU": "Լ",
+        "letterL": "լ",
+        "transcription": "[l]",
+        "frequency": 2.0424
+    },
+    {
+        "id": 13,
+        "letterU": "Խ",
+        "letterL": "խ",
+        "transcription": "[x/kh]",
+        "frequency": 0.5519
+    },
+    {
+        "id": 14,
+        "letterU": "Ծ",
+        "letterL": "ծ",
+        "transcription": "[ts]",
+        "frequency": 0.8123
+    },
+    {
+        "id": 15,
+        "letterU": "Կ",
+        "letterL": "կ",
+        "transcription": "[k]",
+        "frequency": 4.1647
+    },
+    {
+        "id": 16,
+        "letterU": "Հ",
+        "letterL": "հ",
+        "transcription": "[h]",
+        "frequency": 1.8413
+    },
+    {
+        "id": 17,
+        "letterU": "Ձ",
+        "letterL": "ձ",
+        "transcription": "[dz]",
+        "frequency": 0.312
+    },
+    {
+        "id": 18,
+        "letterU": "Ղ",
+        "letterL": "ղ",
+        "transcription": "[ʁ]",
+        "frequency": 1.0831
+    },
+    {
+        "id": 19,
+        "letterU": "Ճ",
+        "letterL": "ճ",
+        "transcription": "[ch]",
+        "frequency": 0.2192
+    },
+    {
+        "id": 20,
+        "letterU": "Մ",
+        "letterL": "մ",
+        "transcription": "[m]",
+        "frequency": 4.1776
+    },
+    {
+        "id": 21,
+        "letterU": "Յ",
+        "letterL": "յ",
+        "transcription": "[j]",
+        "frequency": 3.3498
+    },
+    {
+        "id": 22,
+        "letterU": "Ն",
+        "letterL": "ն",
+        "transcription": "[n]",
+        "frequency": 10.0005
+    },
+    {
+        "id": 23,
+        "letterU": "Շ",
+        "letterL": "շ",
+        "transcription": "[sh]",
+        "frequency": 0.7453
+    },
+    {
+        "id": 24,
+        "letterU": "Ո",
+        "letterL": "ո",
+        "transcription": "[o/vo]",
+        "frequency": 3.6051
+    },
+    {
+        "id": 25,
+        "letterU": "Չ",
+        "letterL": "չ",
+        "transcription": "[ch]",
+        "frequency": 0.5673
+    },
+    {
+        "id": 26,
+        "letterU": "Պ",
+        "letterL": "պ",
+        "transcription": "[p]",
+        "frequency": 1.0521
+    },
+    {
+        "id": 27,
+        "letterU": "Ջ",
+        "letterL": "ջ",
+        "transcription": "[dzh]",
+        "frequency": 0.4616
+    },
+    {
+        "id": 28,
+        "letterU": "Ռ",
+        "letterL": "ռ",
+        "transcription": "[r]",
+        "frequency": 0.7375
+    },
+    {
+        "id": 29,
+        "letterU": "Ս",
+        "letterL": "ս",
+        "transcription": "[s]",
+        "frequency": 2.6175
+    },
+    {
+        "id": 30,
+        "letterU": "Վ",
+        "letterL": "վ",
+        "transcription": "[v]",
+        "frequency": 2.9295
+    },
+    {
+        "id": 31,
+        "letterU": "Տ",
+        "letterL": "տ",
+        "transcription": "[t]",
+        "frequency": 3.306
+    },
+    {
+        "id": 32,
+        "letterU": "Ր",
+        "letterL": "ր",
+        "transcription": "[r]",
+        "frequency": 7.7131
+    },
+    {
+        "id": 33,
+        "letterU": "Ց",
+        "letterL": "Ց",
+        "transcription": "[ts]",
+        "frequency": 1.3513
+    },
+    {
+        "id": 34,
+        "letterU": "Ւ",
+        "letterL": "ու",
+        "transcription": "[u]",
+        "frequency": 4.5877
+    },
+    {
+        "id": 35,
+        "letterU": "Փ",
+        "letterL": "պ",
+        "transcription": "[ph]",
+        "frequency": 0.2244
+    },
+    {
+        "id": 36,
+        "letterU": "Ք",
+        "letterL": "ք",
+        "transcription": "[k']",
+        "frequency": 1.145
+    },
+    {
+        "id": 37,
+        "letterL": "և",
+        "letterU": "և",
+        "transcription": "[yev]",
+        "frequency": 0.704
+    },
+    {
+        "id": 38,
+        "letterU": "Օ",
+        "letterL": "օ",
+        "transcription": "[o]",
+        "frequency": 0.1779
+    },
+    {
+        "id": 39,
+        "letterU": "Ֆ",
+        "letterL": "ֆ",
+        "transcription": "[f]",
+        "frequency": 0.2295
+    }
+]
