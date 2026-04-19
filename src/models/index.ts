@@ -2,8 +2,8 @@ export interface ILetter {
     id: number;
     letterU: string;
     letterL: string;
-    transcription: string;
-    frequency: number;
+    transcriptionEn: string
+    transcriptionRu: string
 }
 
 export interface ILearningConfig {

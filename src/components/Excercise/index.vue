@@ -1,34 +1,34 @@
 <template>
-    <v-card class="px-4 py-4 mb-4">
+  <v-card class="px-4 py-4 mb-4">
 
-        <div v-if="activeExcercise.promptKind === 'transcription_from_letter'" :class="promptBoxClass"
-            class="d-flex align-center justify-center mb-6">
-            <span :class="letterTextClass">{{ letterPrompt }}</span>
-        </div>
+    <div v-if="activeExcercise.promptKind === 'transcription_from_letter'" :class="promptBoxClass"
+      class="d-flex align-center justify-center mb-6">
+      <span :class="letterTextClass">{{ letterPrompt }}</span>
+    </div>
 
-        <div v-else class="mb-6">
-            <div :class="promptBoxClass" class="d-flex flex-column align-center justify-center ga-2">
-                <span :class="transcriptionTextClass">{{ targetLetter?.transcription }}</span>
-                <v-chip size="small" color="primary" variant="tonal">
-                    {{ activeExcercise.letterCase === 'upper' ? 'Заглавная' : 'Строчная' }}
-                </v-chip>
-            </div>
-        </div>
+    <div v-else class="mb-6">
+      <div :class="promptBoxClass" class="d-flex flex-column align-center justify-center ga-2">
+        <span :class="transcriptionTextClass">{{ transcription }}</span>
+        <v-chip size="small" color="primary" variant="tonal">
+          {{ activeExcercise.letterCase === 'upper' ? t('uppercase') : t('lowercase') }}
+        </v-chip>
+      </div>
+    </div>
 
 
-        <v-row>
-            <v-col v-for="ch in activeExcercise.choices" :key="ch.key" cols="12" sm="6">
-                <v-btn block size="large" variant="tonal" class="choice-btn text-none" :class="choiceButtonClass"
-                    @click="onPick(ch.key)">
-                    {{ ch.display }}
-                </v-btn>
-            </v-col>
-        </v-row>
-    </v-card>
+    <v-row>
+      <v-col v-for="ch in activeExcercise.choices" :key="ch.key" cols="12" sm="6">
+        <v-btn block size="large" variant="tonal" class="choice-btn text-none" :class="choiceButtonClass"
+          @click="onPick(ch.key)">
+          {{ ch.display }}
+        </v-btn>
+      </v-col>
+    </v-row>
+  </v-card>
 
-    <v-snackbar v-model="showSnackbar" :color="snackbarColor" timeout="1600" location="bottom">
-        {{ snackbarText }}
-    </v-snackbar>
+  <v-snackbar v-model="showSnackbar" :color="snackbarColor" timeout="1600" location="bottom">
+    {{ snackbarText }}
+  </v-snackbar>
 </template>
 
 
@@ -36,19 +36,21 @@
 import { computed, ref } from 'vue'
 import type { IActiveExercise } from '@/models'
 import { useLearningStore } from '@/store/learning'
+import { useI18n } from 'vue-i18n'
 
+const { t, locale } = useI18n()
 const learning = useLearningStore()
 const showSnackbar = ref(false)
 const snackbarText = ref('')
 const snackbarColor = ref<'success' | 'error'>('success')
 
 const props = defineProps<{
-    activeExcercise: IActiveExercise
-    submitChoice: (key: string) => boolean | null
+  activeExcercise: IActiveExercise
+  submitChoice: (key: string) => boolean | null
 }>()
 
 const emit = defineEmits<{
-    (e: 'pick', key: string): void
+  (e: 'pick', key: string): void
 }>()
 const targetLetter = computed(() => {
   if (props.activeExcercise) return learning.letters.find(l => l.id === props.activeExcercise.targetLetterId)
@@ -77,6 +79,11 @@ const transcriptionTextClass = computed(() =>
   props.activeExcercise?.visualMode === 'picture' ? 'text-h5' : 'text-h6',
 )
 
+const transcription = computed(() => {
+  if (locale.value === 'ru') return targetLetter.value?.transcriptionRu
+  return targetLetter.value?.transcriptionEn
+})
+
 const choiceButtonClass = computed(() =>
   props.activeExcercise?.promptKind === 'letter_from_transcription' ? 'text-h6' : 'text-body-1',
 )
@@ -84,7 +91,7 @@ const choiceButtonClass = computed(() =>
 function onPick(key: string) {
   const ok = props.submitChoice(key)
   if (ok === null) return
-  snackbarText.value = ok ? 'Верно' : 'Неверно'
+  snackbarText.value = ok ? t('correct') : t('wrong')
   snackbarColor.value = ok ? 'success' : 'error'
   showSnackbar.value = true
 }

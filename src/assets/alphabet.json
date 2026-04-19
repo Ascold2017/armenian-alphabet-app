@@ -3,273 +3,273 @@
         "id": 1,
         "letterU": "Ա",
         "letterL": "ա",
-        "transcription": "[a]",
-        "frequency": 16.6615
+        "transcriptionEn": "[a]",
+        "transcriptionRu": "[a]"
     },
     {
         "id": 2,
         "letterU": "Բ",
         "letterL": "բ",
-        "transcription": "[b]",
-        "frequency": 1.292
+        "transcriptionEn": "[b]",
+        "transcriptionRu": "[б]"
     },
     {
         "id": 3,
         "letterU": "Գ",
         "letterL": "գ",
-        "transcription": "[g]",
-        "frequency": 1.7845
+        "transcriptionEn": "[g]",
+        "transcriptionRu": "[г]"
     },
     {
         "id": 4,
         "letterU": "Դ",
         "letterL": "դ",
-        "transcription": "[d]",
-        "frequency": 1.4776
+        "transcriptionEn": "[d]",
+        "transcriptionRu": "[д]"
     },
     {
         "id": 5,
         "letterU": "Ե",
         "letterL": "ե",
-        "transcription": "[e/ye]",
-        "frequency": 5.8874
+        "transcriptionEn": "[e/ye]",
+        "transcriptionRu": "[йе]"
     },
     {
         "id": 6,
         "letterU": "Զ",
         "letterL": "զ",
-        "transcription": "[z]",
-        "frequency": 0.7917
+        "transcriptionEn": "[z]",
+        "transcriptionRu": "[з]"
     },
     {
         "id": 7,
         "letterU": "Է",
         "letterL": "է",
-        "transcription": "[ē] (э)",
-        "frequency": 1.194
+        "transcriptionEn": "[ē]",
+        "transcriptionRu": "[э]"
     },
     {
         "id": 8,
         "letterU": "Ը",
         "letterL": "ը",
-        "transcription": "[ə] (ё)",
-        "frequency": 1.3461
+        "transcriptionEn": "[ə]",
+        "transcriptionRu": "[ё]"
     },
     {
         "id": 9,
         "letterU": "Թ",
         "letterL": "թ",
-        "transcription": "[tʰ]",
-        "frequency": 1.9625
+        "transcriptionEn": "[tʰ]",
+        "transcriptionRu": "[т]"
     },
     {
         "id": 10,
         "letterU": "Ժ",
         "letterL": "ժ",
-        "transcription": "[ʒ] (ж)",
-        "frequency": 0.2553
+        "transcriptionEn": "[zh]",
+        "transcriptionRu": "[ж]"
     },
     {
         "id": 11,
         "letterU": "Ի",
         "letterL": "ի",
-        "transcription": "[i]",
-        "frequency": 6.5424
+        "transcriptionEn": "[i]",
+        "transcriptionRu": "[и]"
     },
     {
         "id": 12,
         "letterU": "Լ",
         "letterL": "լ",
-        "transcription": "[l]",
-        "frequency": 2.0424
+        "transcriptionEn": "[l]",
+        "transcriptionRu": "[л]"
     },
     {
         "id": 13,
         "letterU": "Խ",
         "letterL": "խ",
-        "transcription": "[x/kh]",
-        "frequency": 0.5519
+        "transcriptionEn": "[x/kh]",
+        "transcriptionRu": "[х]"
     },
     {
         "id": 14,
         "letterU": "Ծ",
         "letterL": "ծ",
-        "transcription": "[ts]",
-        "frequency": 0.8123
+        "transcriptionEn": "[ts]",
+        "transcriptionRu": "[ц]"
     },
     {
         "id": 15,
         "letterU": "Կ",
         "letterL": "կ",
-        "transcription": "[k]",
-        "frequency": 4.1647
+        "transcriptionEn": "[k]",
+        "transcriptionRu": "[к]"
     },
     {
         "id": 16,
         "letterU": "Հ",
         "letterL": "հ",
-        "transcription": "[h]",
-        "frequency": 1.8413
+        "transcriptionEn": "[h]",
+        "transcriptionRu": "[х]"
     },
     {
         "id": 17,
         "letterU": "Ձ",
         "letterL": "ձ",
-        "transcription": "[dz]",
-        "frequency": 0.312
+        "transcriptionEn": "[dz]",
+        "transcriptionRu": "[дз]"
     },
     {
         "id": 18,
         "letterU": "Ղ",
         "letterL": "ղ",
-        "transcription": "[ʁ]",
-        "frequency": 1.0831
+        "transcriptionEn": "[ʁ]",
+        "transcriptionRu": "[a]"
     },
     {
         "id": 19,
         "letterU": "Ճ",
         "letterL": "ճ",
-        "transcription": "[ch]",
-        "frequency": 0.2192
+        "transcriptionEn": "[ch]",
+        "transcriptionRu": "[ч]"
     },
     {
         "id": 20,
         "letterU": "Մ",
         "letterL": "մ",
-        "transcription": "[m]",
-        "frequency": 4.1776
+        "transcriptionEn": "[m]",
+        "transcriptionRu": "[м]"
     },
     {
         "id": 21,
         "letterU": "Յ",
         "letterL": "յ",
-        "transcription": "[j]",
-        "frequency": 3.3498
+        "transcriptionEn": "[j]",
+        "transcriptionRu": "[й]"
     },
     {
         "id": 22,
         "letterU": "Ն",
         "letterL": "ն",
-        "transcription": "[n]",
-        "frequency": 10.0005
+        "transcriptionEn": "[n]",
+        "transcriptionRu": "[н]"
     },
     {
         "id": 23,
         "letterU": "Շ",
         "letterL": "շ",
-        "transcription": "[sh]",
-        "frequency": 0.7453
+        "transcriptionEn": "[sh]",
+        "transcriptionRu": "[ш]"
     },
     {
         "id": 24,
         "letterU": "Ո",
         "letterL": "ո",
-        "transcription": "[o/vo]",
-        "frequency": 3.6051
+        "transcriptionEn": "[o/vo]",
+        "transcriptionRu": "[уо]"
     },
     {
         "id": 25,
         "letterU": "Չ",
         "letterL": "չ",
-        "transcription": "[ch]",
-        "frequency": 0.5673
+        "transcriptionEn": "[ch]",
+        "transcriptionRu": "[ч]"
     },
     {
         "id": 26,
         "letterU": "Պ",
         "letterL": "պ",
-        "transcription": "[p]",
-        "frequency": 1.0521
+        "transcriptionEn": "[p]",
+        "transcriptionRu": "[р]"
     },
     {
         "id": 27,
         "letterU": "Ջ",
         "letterL": "ջ",
-        "transcription": "[dzh]",
-        "frequency": 0.4616
+        "transcriptionEn": "[dzh]",
+        "transcriptionRu": "[дж]"
     },
     {
         "id": 28,
         "letterU": "Ռ",
         "letterL": "ռ",
-        "transcription": "[r]",
-        "frequency": 0.7375
+        "transcriptionEn": "[r]",
+        "transcriptionRu": "[р]"
     },
     {
         "id": 29,
         "letterU": "Ս",
         "letterL": "ս",
-        "transcription": "[s]",
-        "frequency": 2.6175
+        "transcriptionEn": "[s]",
+        "transcriptionRu": "[с]"
     },
     {
         "id": 30,
         "letterU": "Վ",
         "letterL": "վ",
-        "transcription": "[v]",
-        "frequency": 2.9295
+        "transcriptionEn": "[v]",
+        "transcriptionRu": "[в]"
     },
     {
         "id": 31,
         "letterU": "Տ",
         "letterL": "տ",
-        "transcription": "[t]",
-        "frequency": 3.306
+        "transcriptionEn": "[t]",
+        "transcriptionRu": "[т]"
     },
     {
         "id": 32,
         "letterU": "Ր",
         "letterL": "ր",
-        "transcription": "[r]",
-        "frequency": 7.7131
+        "transcriptionEn": "[r]",
+        "transcriptionRu": "[р]"
     },
     {
         "id": 33,
         "letterU": "Ց",
         "letterL": "Ց",
-        "transcription": "[ts]",
-        "frequency": 1.3513
+        "transcriptionEn": "[ts]",
+        "transcriptionRu": "[ц]"
     },
     {
         "id": 34,
         "letterU": "Ւ",
         "letterL": "ու",
-        "transcription": "[u]",
-        "frequency": 4.5877
+        "transcriptionEn": "[u]",
+        "transcriptionRu": "[у]"
     },
     {
         "id": 35,
         "letterU": "Փ",
         "letterL": "պ",
-        "transcription": "[ph]",
-        "frequency": 0.2244
+        "transcriptionEn": "[ph]",
+        "transcriptionRu": "[п]"
     },
     {
         "id": 36,
         "letterU": "Ք",
         "letterL": "ք",
-        "transcription": "[k']",
-        "frequency": 1.145
+        "transcriptionEn": "[k']",
+        "transcriptionRu": "[к]"
     },
     {
         "id": 37,
         "letterL": "և",
         "letterU": "և",
-        "transcription": "[yev]",
-        "frequency": 0.704
+        "transcriptionEn": "[yev]",
+        "transcriptionRu": "[ев]"
     },
     {
         "id": 38,
         "letterU": "Օ",
         "letterL": "օ",
-        "transcription": "[o]",
-        "frequency": 0.1779
+        "transcriptionEn": "[o]",
+        "transcriptionRu": "[о]"
     },
     {
         "id": 39,
         "letterU": "Ֆ",
         "letterL": "ֆ",
-        "transcription": "[f]",
-        "frequency": 0.2295
+        "transcriptionEn": "[f]",
+        "transcriptionRu": "[ф]"
     }
 ]
