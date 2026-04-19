@@ -70,7 +70,7 @@ const maxLetters = computed(() => Math.max(1, learning.letters.length))
 
 const vLocale = computed({
   get() {
-    return locale.value
+    return locale.value || 'en'
   },
   set(v: 'en' | 'ru') {
     changeLocale(v)

@@ -1,7 +1,7 @@
 import { createI18n } from "vue-i18n";
 
 export const i18n = createI18n({
-  locale: localStorage.getItem("locale") as "en" | "ru",
+  locale: localStorage.getItem("locale") as "en" | "ru" || 'en',
   fallbackLocale: "en",
   messages: {
     en: {

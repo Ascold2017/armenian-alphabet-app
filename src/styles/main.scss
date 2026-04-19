@@ -2,4 +2,23 @@
   code, pre, .v-code {
     font-family: var(--font-mono);
   }
+
+  /*
+    Capacitor / полноэкранный WebView: статус-бар и вырезы — через env(safe-area-inset-*).
+    Нижняя панель должна быть соседом v-main, иначе у VMain не резервируется --v-layout-bottom.
+  */
+  .v-main {
+    padding-top: calc(var(--v-layout-top) + env(safe-area-inset-top, 0px));
+    padding-right: calc(var(--v-layout-right) + env(safe-area-inset-right, 4px));
+    padding-bottom: calc(var(--v-layout-bottom) + env(safe-area-inset-bottom, 0px));
+    padding-left: calc(var(--v-layout-left) + env(safe-area-inset-left, 4px));
+  }
+
+  /*
+    Высота из layout остаётся 56px; расширяем панель вниз под home indicator,
+    иначе у v-main лишний зазор между контентом и кнопками.
+  */
+  .v-bottom-navigation {
+    height: calc(56px + env(safe-area-inset-bottom, 0px)) !important;
+  }
 }
