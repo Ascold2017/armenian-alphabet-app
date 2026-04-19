@@ -2,6 +2,11 @@
 
 Application for learning armenian alphabet
 
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/f5f88b6a-b8ce-44c3-9649-7ec0af3ab9a9" />
+![Uploading image.png…]()
+![Uploading image.png…]()
+
+
 
 ## Features
 
