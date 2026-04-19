@@ -1,13 +1,29 @@
-# am-app
+# Armenian alphabet app
 
-Scaffolded with Vuetify CLI.
+Application for learning armenian alphabet
 
-## ❗️ Documentation
 
-- Primary docs: https://vuetifyjs.com/
-- Getting started guide: https://vuetifyjs.com/en/getting-started/installation/
-- Community support: https://community.vuetifyjs.com/
-- Issue tracker: https://issues.vuetifyjs.com/
+## Features
+
+Start learn alphabet by just click Continue learning
+
+It will start repeating of first of 5 letters (configurable on settings screen)
+
+Then you should correct answer exercises - correct transcription of letter, or correct letter by transcription
+
+If you answer correct - you will get 1 score point for this letter, if wrong - you lose 1 point
+
+When you obtain 10 score points of letter (configurable on settings screen) - this letter will be learned and not be repeatable after
+
+Then you will repeat next and next letters, 5 letters simultaneosly, till the last.
+
+If you paused usage of application - after 6 hours all not learned letters lose 1 score point, after 12 hours - 2 points, and after 24 hours - 3 points
+
+On settings screen you can change settings:
+- reset all progress
+- change language (russian and english available)
+- change count of letters that you will learn in single time (default - 5)
+- change count of score points to make letter learned
 
 ## 🧱 Stack
 
@@ -16,27 +32,6 @@ Scaffolded with Vuetify CLI.
 - Language: TypeScript
 - Package manager: npm
 
-## 🧭 Start Here
-
-- Main entry: `src/main.ts`
-- Main app component: `src/App.vue`
-- Main styles: `src/styles/`
-- Plugin setup: `src/plugins/`
-
-## 📁 Project Structure
-
-- `src/main.ts` — application entry point
-- `src/App.vue` — root component
-- `src/components/` — reusable Vue components
-- `src/plugins/` — plugin registration and setup
-- `src/styles/` — global styles and theme settings
-- `public/` — static public files
-
-## ✨ Enabled Features
-
-- ESLint
-- Vuetify MCP
-- Tailwind CSS
 
 ## 💿 Install
 
@@ -57,26 +52,11 @@ npm run dev
 
 ```bash
 npm run build
+
+npx cap sync android
+
+npx cap open android
 ```
 
-## 🧪 Available Scripts
-
-- `npm run dev`
-- `npm run build`
-- `npm run preview`
-- `npm run build-only`
-- `npm run type-check`
-- `npm run lint`
-- `npm run lint:fix`
-- `npm run mcp`
-- `npm run mcp:revert`
-
-## 💪 Support Vuetify Development
-
-This project uses Vuetify - an MIT licensed Open Source project. We are glad to welcome contributors and any support for ongoing development:
-
-- Contribute to Vuetify and ecosystem projects: https://github.com/vuetifyjs
-- Request enterprise support: https://support.vuetifyjs.com/
-- Sponsor on GitHub: https://github.com/sponsors/vuetifyjs
-- Support on Open Collective: https://opencollective.com/vuetify
+Then build and run app via Android Studio
 
