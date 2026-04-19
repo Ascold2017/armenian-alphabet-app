@@ -5,6 +5,7 @@ import type {
   ILetter,
 } from '@/models'
 import { randomCase, randomChoiceKey, shuffleInPlace } from './shuffle'
+import { useI18n } from 'vue-i18n'
 
 export interface UseExerciseGeneratorOptions {
   letters: Ref<ILetter[]>
@@ -17,6 +18,7 @@ export function useExerciseGenerator({
   sessionOrder,
   sessionIndex,
 }: UseExerciseGeneratorOptions) {
+  const { locale } = useI18n()
   const activeExercise = ref<IActiveExercise | null>(null)
 
   function pickDistractorLetterIds(excludeId: number, count: number): number[] {
@@ -44,18 +46,22 @@ export function useExerciseGenerator({
     return ids.slice(0, count)
   }
 
+  const getTranscription = (l: ILetter) => {
+    if (locale.value === 'ru') return l.transcriptionRu
+    return l.transcriptionEn
+  }
   function buildTranscriptionChoices(
     target: ILetter,
     wrongLetterIds: number[],
   ): { choices: IExerciseChoice[]; correctChoiceKey: string } {
     const correctChoiceKey = randomChoiceKey()
     const choices: IExerciseChoice[] = [
-      { key: correctChoiceKey, display: target.transcription },
+      { key: correctChoiceKey, display: getTranscription(target)},
     ]
     for (const id of wrongLetterIds) {
       const w = letters.value.find(l => l.id === id)
       if (w) {
-        choices.push({ key: randomChoiceKey(), display: w.transcription })
+        choices.push({ key: randomChoiceKey(), display: getTranscription(w) })
       }
     }
     shuffleInPlace(choices)
