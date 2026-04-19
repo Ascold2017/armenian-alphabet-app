@@ -2,6 +2,14 @@ import { ref, type Ref } from 'vue'
 import { LetterStatus, type ILearningProgress } from '@/models'
 
 const PROGRESS_KEY = 'progress'
+const HOUR_MS = 60 * 60 * 1000
+
+function scoreDecayForIdleMs(idleMs: number): number {
+  if (idleMs < 6 * HOUR_MS) return 0
+  if (idleMs < 12 * HOUR_MS) return 1
+  if (idleMs < 24 * HOUR_MS) return 2
+  return 3
+}
 
 export interface UseLearningProgressOptions {
   scoreToLearned: Ref<number>
@@ -20,9 +28,26 @@ export function useLearningProgress({ scoreToLearned }: UseLearningProgressOptio
     if (!raw) return
     try {
       const progress = JSON.parse(raw) as ILearningProgress[]
-      progress.forEach((p) => {
-        learningProgressMap.value.set(p.letterId, p)
-      })
+      const now = Date.now()
+      let mutated = false
+
+      for (const p of progress) {
+        let entry = p
+
+        if (p.status === LetterStatus.LEARNING && p.lastStudied > 0) {
+          const decay = scoreDecayForIdleMs(now - p.lastStudied)
+          if (decay > 0) {
+            const score = Math.max(0, p.score - decay)
+            const status = score > 0 ? LetterStatus.LEARNING : LetterStatus.NEW
+            entry = { ...p, score, status }
+            mutated = true
+          }
+        }
+
+        learningProgressMap.value.set(entry.letterId, entry)
+      }
+
+      if (mutated) saveProgress()
     } catch {
       /* ignore */
     }
@@ -49,7 +74,7 @@ export function useLearningProgress({ scoreToLearned }: UseLearningProgressOptio
   /** @returns true, если буква стала выученной (нужно пересобрать пул). */
   function applyScoreDelta(letterId: number, delta: number): boolean {
     const existing = getProgressOrDefault(letterId)
-    let score = Math.max(0, existing.score + delta)
+    let score = existing.score + delta
     let status = existing.status
 
     if (score >= scoreToLearned.value) {

@@ -97,25 +97,6 @@ export const useLearningStore = defineStore('learning', () => {
     submitChoice,
     spawnExerciseForCurrentSlot: exercise.spawnExerciseForCurrentSlot,
     resetAllProgress,
-    learningConfig: computed(() => ({
-      poolSize: settings.learningPoolSize,
-      scoreToLearned: settings.scoreToLearned,
-    })),
-    setLearningConfig(partial: { poolSize?: number; scoreToLearned?: number }) {
-      if (partial.poolSize != null) {
-        settings.learningPoolSize = Math.min(
-          Math.max(1, Math.floor(partial.poolSize)),
-          Math.max(1, letters.value.length),
-        )
-      }
-      if (partial.scoreToLearned != null) {
-        settings.scoreToLearned = Math.min(
-          999,
-          Math.max(1, Math.floor(partial.scoreToLearned)),
-        )
-      }
-      settings.saveConfig()
-      bootstrapPoolAndSession()
-    },
+    bootstrapPoolAndSession,
   }
 })

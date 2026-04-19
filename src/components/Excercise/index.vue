@@ -1,5 +1,5 @@
 <template>
-    <v-card class="pa-4 mb-4">
+    <v-card class="px-4 py-4 mb-4">
 
         <div v-if="activeExcercise.promptKind === 'transcription_from_letter'" :class="promptBoxClass"
             class="d-flex align-center justify-center mb-6">

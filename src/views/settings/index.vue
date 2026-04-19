@@ -2,7 +2,7 @@
   <v-container fluid class="pb-16">
     <h1 class="text-h6 mb-4">Настройки обучения</h1>
 
-    <v-card class="pa-4 mb-4">
+    <v-card class="px-4 py-3 mb-4">
       <div class="text-subtitle-2 mb-4">Параметры пула и засчитывания</div>
 
       <v-slider
@@ -31,7 +31,7 @@
       />
     </v-card>
 
-    <v-card class="pa-4">
+    <v-card class="px-4 py-3">
       <div class="text-subtitle-2 mb-2">Данные</div>
       <p class="text-body-2 text-medium-emphasis mb-4">
         Сброс прогресса удаляет сохранённые очки по всем буквам. Пул будет пересобран.

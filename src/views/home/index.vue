@@ -13,7 +13,8 @@
                     <v-card class="p-4 text-center" :color="letterColor(letter)">
                         <span class="text-sm font-bold">{{ letter.letterU }}</span>&nbsp;
                         <span class="text-sm font-bold">{{ letter.letterL }}</span><br>
-                        <span class="text-sm">{{ letter.transcription }}</span>
+                        <span class="text-sm">{{ letter.transcription }}</span><br>
+                        <v-progress-linear class="mt-3" :model-value="letterProgress(letter)"></v-progress-linear>
                     </v-card>
                 </v-col>
             </v-row>
@@ -24,14 +25,20 @@
 <script lang="ts" setup>
 import { LetterStatus, type ParsedLetter } from '@/models';
 import { useLearningStore } from '@/store/learning'
+import { useSettingsStore } from '@/store/settings';
 import { computed } from 'vue'
 
 const store = useLearningStore()
+const settings = useSettingsStore()
 
 const letterColor = computed(() => (letter: ParsedLetter) => {
-    
+
     if (letter.status === LetterStatus.LEARNING) return 'primary'
     if (letter.status === LetterStatus.LEARNED) return 'success'
     return 'secondary'
+})
+
+const letterProgress = computed(() => (letter: ParsedLetter) => {
+    return (letter.score / settings.scoreToLearned) * 100
 })
 </script>

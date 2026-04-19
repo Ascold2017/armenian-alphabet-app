@@ -4,9 +4,6 @@
       <v-btn variant="text" :to="{ name: 'home' }" prepend-icon="mdi-arrow-left">
         Назад
       </v-btn>
-      <div class="text-caption text-medium-emphasis">
-        Пул: {{ learningPoolIds.length }} / {{ learningConfig.poolSize }}
-      </div>
     </div>
 
     <Excercise v-if="activeExercise" :active-excercise="activeExercise" :submit-choice="submitChoice" />
@@ -33,7 +30,7 @@ import Excercise from '@/components/Excercise/index.vue'
 const store = useLearningStore()
 const { submitChoice } = store
 
-const { activeExercise, learningPoolIds, learningConfig } = storeToRefs(store)
+const { activeExercise, learningPoolIds } = storeToRefs(store)
 </script>
 
 
