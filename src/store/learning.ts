@@ -96,6 +96,7 @@ export const useLearningStore = defineStore('learning', () => {
     currentLetterScore,
     submitChoice,
     spawnExerciseForCurrentSlot: exercise.spawnExerciseForCurrentSlot,
+    playAudio: audio.playLetterAudio,
     resetAllProgress,
     bootstrapPoolAndSession,
   }

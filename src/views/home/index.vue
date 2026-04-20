@@ -5,12 +5,9 @@
         </h1>
 
         <v-container fluid>
-            <v-row gap="4" class="mb-4">
-                <v-btn to="/learning" block color="primary">{{ t('continueLearningButton') }}</v-btn>
-            </v-row>
             <v-row gap="4">
                 <v-col cols="3" v-for="letter in store.parsedLetters" :key="letter.id">
-                    <v-card class="p-4 text-center" :color="letterColor(letter)">
+                    <v-card class="p-4 text-center" :color="letterColor(letter)" @click="store.playAudio(letter.id)">
                         <span class="text-sm font-bold">{{ letter.letterU }}</span>&nbsp;
                         <span class="text-sm font-bold">{{ letter.letterL }}</span><br>
                         <span class="text-sm">{{ letterTranscription(letter) }}</span><br>
